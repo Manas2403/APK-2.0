@@ -1,0 +1,49 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin transition-ease {
+  transition: all 0.8s ease;
+}
+
+@mixin transition-ease-in-out {
+  transition: all 0.8s ease-in-out;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin heading {
+  font-size: 64px;
+  text-shadow: 1.7px 0.7px 0px $primary-color, 2px 1px 0px white;
+  text-align: center;
+  margin: 1rem 1rem;
+
+  width: 100%;
+  @include mobile {
+    font-size: 36px;
+  }
+}
+@mixin sub-heading {
+  font-size: 54px;
+  text-shadow: 1.7px 0.7px 0px $primary-color, 2px 1px 0px white;
+  text-align: center;
+  margin: 1rem 1rem;
+
+  width: 100%;
+  @include mobile {
+    font-size: 28px;
+  }
+}

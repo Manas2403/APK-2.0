@@ -1,0 +1,67 @@
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  @include mobile {
+    position: fixed;
+    background: #22222295;
+    backdrop-filter: blur(4px);
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+  &__logo {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    height: 4.4vw;
+
+    @include tablet {
+      height: 10vw;
+    }
+    @include mobile {
+      height: 10vw;
+    }
+  }
+
+  &__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__navlinks {
+      display: flex;
+      padding: 2rem 0rem;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 95vh;
+      overflow: hidden;
+      background: $secondary-color;
+      transform: translateY(-100%);
+      // position: relative;
+
+      @include transition-ease;
+
+      &.open {
+        transform: translateY(0);
+      }
+    }
+    &__navlink a {
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 2rem;
+    }
+  }
+}

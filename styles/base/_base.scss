@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+#scene-container {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 128, 128, 0.507);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}

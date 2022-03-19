@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aparoksha</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/cac593b958.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+      integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="./src/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script defer>  
+      
+      // function makeTimer() {
+      //   // var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
+      //   // var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");
+      //   var endTime = new Date("20 April 2022 00:00:00");
+      //   endTime = Date.parse(endTime) / 1000;
+      //   var now = new Date();
+      //   now = Date.parse(now) / 1000;
+      //   var timeLeft = endTime - now;
+      //   var days = Math.floor(timeLeft / 86400);
+      //   var hours = Math.floor((timeLeft - days * 86400) / 3600);
+      //   var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
+      //   var seconds = Math.floor(
+      //     timeLeft - days * 86400 - hours * 3600 - minutes * 60
+      //   );
+      //   if (hours < "10") {
+      //     hours = "0" + hours;
+      //   }
+      //   if (minutes < "10") {
+      //     minutes = "0" + minutes;
+      //   }
+      //   if (seconds < "10") {
+      //     seconds = "0" + seconds;
+      //   }
+      //   // $("#days").html(days + '<span style="font-size:0.5em;">Days</span>');
+      //   // $("#hours").html(hours + '<span style="font-size:0.5em;">Hours</span>');
+      //   // $("#minutes").html(
+      //   //   minutes + '<span  style="font-size:0.5em;">Minutes</span>'
+      //   // );
+      //   // $("#seconds").html(
+      //   //   seconds + '<span style="font-size:0.5em;">Seconds</span>'
+      //   // );
+
+      //   document.getElementById("days").innerHTML=days;
+      //   document.getElementById("hours").innerHTML=hours;
+      //   document.getElementById("minutes").innerHTML=minutes;
+      //   document.getElementById("seconds").innerHTML=seconds;
+      // }
+      // setInterval(function () {
+      //   makeTimer();
+      // }, 1000);
+    </script>
+
+    
+  </head>
+  <body>
+    <!-- put here content that will not change
+      between your pages, like <header> or <nav> -->
+
+    <div id="scene-container"></div>
+    <div class="overlay"></div>
+    <header>
+      <div class="header">
+        <img
+          href="./index.html"
+          src="./assets/apklogo.svg"
+          class="header__logo"
+        />
+
+        <div class="header__menu-btn">
+          <span class="header__menu-btn__burger"></span>
+        </div>
+        <nav class="header__navbar">
+          <ul class="header__navbar__navlinks">
+            <li class="header__navbar__navlink">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./views/events.html">Events</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./views/tech-events.html">Tech-Events</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./views/sponsors.html">Sponsors</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./views/contact.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div data-barba="wrapper">
+      <main
+        data-barba="container"
+        data-barba-namespace="home"
+        class="mainParent"
+      >
+        <div class="container">
+          <!-- <section class="hero">
+            <div class="hero__text">
+              <h1 class="no-select">Aparoksha</h1>
+              <span class="no-select">2022</span>
+            </div>
+            <div class="buttons">
+              <button id="register">Register Now!</button>
+              <button id="discord">Join our Discord Server!</button>
+            </div> 
+              <span class="entry"></span>
+            
+          </section> -->
+          
+          <div id="herocont">
+          <div class="apkheading glitch">
+            <div class="name">Aparoksha 2022</div>
+            <div class="name">Aparoksha 2022</div>
+            <div class="name">Aparoksha 2022</div>
+          </div>
+          <!-- <div class="apkheading glitch">
+            <div class="year">2022</div>
+            <div class="year">2022</div>
+            <div class="year">2022</div>
+          </div> -->
+          <div class="buttonsb">
+            <!-- <button id="registerb">Register Now</button>
+            <button id="discordb">Join Our Discord</button> -->
+
+            <button class="cybr-btn">
+              Register Now<span aria-hidden>_</span>
+              <span aria-hidden class="cybr-btn__glitch">Register Now_</span>
+              <!-- <span aria-hidden class="cybr-btn__tag">Register Now</span> -->
+            </button>
+            <button class="cybr-btn">
+              Join Our Discord<span aria-hidden>_</span>
+              <span aria-hidden class="cybr-btn__glitch">Join Our Discord_</span>
+              <!-- <span aria-hidden class="cybr-btn__tag">Join Our Discord</span> -->
+            </button>
+          </div> 
+
+        </div>
+
+
+          <section class="timer">
+            <div class="timerd">
+                <div class="heading glitches" data-glitch="WE ARE GOING LIVE IN">
+                  WE ARE GOING LIVE IN
+                </div>
+                </div>
+              <div class="numbersd">
+                <div class="cont">
+                <div class="days" id="days">32</div>
+                <div class="type">DAYS</div>
+                </div>
+
+                <div class="cont">
+                <div class="days" id="hours">22</div>
+                <div class="type">HOURS</div>
+                </div>
+
+                <div class="cont">
+                <div class="days" id="minutes">38</div>
+                <div class="type">MINUTES</div>
+                </div>
+
+                <div class="cont">
+                <div class="days" id="seconds">37</div>
+                <div class="type">SECONDS</div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </section>
+          
+
+          <!-- <section class="about">
+            
+            <h1>About</h1>
+            <p>
+              An apex nucleating institute and globally recognized leader in the
+              area of Information Technology, Indian Institute of Information
+              Technology Allahabad, established in 1999, strengthens the
+              ingenious capability necessary for harnessing multidimensional
+              facets of IT at all levels. Aparoksha, the annual technical event
+              of IIIT Allahabad has a reach extended far and wide across the
+              country and beyond, and has managed to become one of the largest
+              and most awaited events for technocrats and young innovators to
+              showcase their ingenuity. Be it raging robotics to endless
+              programming and inspirational talks by esteemed keynote speakers
+              to stimulating workshops and exuberant pro-nights filled with
+              laughter and entertainment, Aparoksha has witnessed the pinnacle
+              of awe-striking technological events over the past sixteen
+              editions as every edition strives to take a leap forward in
+              redefining and revolutionizing technology.
+            </p>
+          </section> -->
+
+          <div class="aboutus">
+            <div class="headers glitches" data-glitch="ABOUT US">ABOUT US</div>
+            <div class="msg">
+              An apex nucleating institute and globally recognized leader in the
+              area of Information Technology, Indian Institute of Information
+              Technology Allahabad, established in 1999, strengthens the
+              ingenious capability necessary for harnessing multidimensional
+              facets of IT at all levels. Aparoksha, the annual technical event
+              of IIIT Allahabad has a reach extended far and wide across the
+              country and beyond, and has managed to become one of the largest
+              and most awaited events for technocrats and young innovators to
+              showcase their ingenuity. Be it raging robotics to endless
+              programming and inspirational talks by esteemed keynote speakers
+              to stimulating workshops and exuberant pro-nights filled with
+              laughter and entertainment, Aparoksha has witnessed the pinnacle
+              of awe-striking technological events over the past sixteen
+              editions as every edition strives to take a leap forward in
+              redefining and revolutionizing technology.
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer__text">
+          <p>We'd Love to hear from you</p>
+          <p class="footer__text__email">team@aparoksha.org</p>
+        </div>
+        <div class="footer__links">
+          <ul class="footer__links__site">
+            <li><a href="./views/events.html"> Events</a></li>
+            <li><a href="./views/tech-events.html">TechEvents</a></li>
+            <li><a href="./views/sponsors.html">Sponsors</a></li>
+            <li><a href="./views/contact.html">Contact</a></li>
+          </ul>
+          <ul class="footer__links__social">
+            <li>
+              <a href="https://www.facebook.com/aparoksha/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/aparokshaiiita/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/aparoksha-iiit-allahabad"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/aparoksha_org" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/c/AparokshaIIITAllahabad"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

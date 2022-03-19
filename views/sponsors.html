@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aparoksha</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <link href="./../styles/main.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/cac593b958.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+      integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="./../src/main.js"></script>
+  </head>
+
+  <body>
+    <!-- put here content that will not change
+      between your pages, like <header> or <nav> -->
+
+    <div id="scene-container"></div>
+    <div class="overlay"></div>
+    <header>
+      <div class="header">
+        <a href="../index.html">
+          <img  src="./../assets/apklogo.svg" class="header__logo" />
+        </a>
+
+        <div class="header__menu-btn">
+          <span class="header__menu-btn__burger"></span>
+        </div>
+        <nav class="header__navbar">
+          <ul class="header__navbar__navlinks">
+            <li class="header__navbar__navlink">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./events.html">Events</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./tech-events.html">Tech-Events</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./sponsors.html">Sponsors</a>
+            </li>
+            <li class="header__navbar__navlink">
+              <a href="./contact.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div data-barba="wrapper">
+      <main
+        data-barba="container"
+        data-barba-namespace="sponsors"
+        class="mainParent"
+      >
+        <h1>Sponsors</h1>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer__text">
+          <p>We'd Love to hear from you</p>
+          <p class="footer__text__email">team@aparoksha.org</p>
+        </div>
+        <div class="footer__links">
+          <ul class="footer__links__site">
+            <li><a href="./events.html"> Events</a></li>
+            <li><a href="./tech-events.html">TechEvents</a></li>
+            <li><a href="./sponsors.html">Sponsors</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <ul class="footer__links__social">
+            <li>
+              <a href="https://www.facebook.com/aparoksha/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/aparokshaiiita/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/aparoksha-iiit-allahabad"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/aparoksha_org" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/c/AparokshaIIITAllahabad"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

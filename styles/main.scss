@@ -1,0 +1,19 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+@import "base/reset";
+@import "base/base";
+
+@import "components/buttons";
+@import "components/menuBurger";
+
+@import "layout/navigation";
+@import "layout/main";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/events";
+@import "pages/contact";
+@import "pages/gallery";
+@import "pages/techevents";
