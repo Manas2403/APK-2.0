@@ -11,7 +11,7 @@
     margin: auto;
     flex-direction: column;
     justify-content: space-around;
-    margin: 4rem 10rem;
+    margin: 4rem auto;
 
     &__info {
       display: flex;
@@ -24,6 +24,7 @@
       p {
         font-size: $body-text;
         width: 90%;
+        font-family: "Airborne", sans-serif;
       }
     }
   }
@@ -36,20 +37,45 @@
   overflow: hidden;
 }
 
-.mySlides img {
+.mySlides {
   width: 60vw;
+  height: 50vh;
+  overflow: hidden;
+}
+.mySlides2 {
+  width: 60vw;
+  height: 50vh;
+  overflow: hidden;
+}
+.mySlides3 {
+  width: 60vw;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.mySlides img {
+  height: inherit;
+  object-fit: cover;
+  justify-self: center;
+  margin: auto;
 }
 
 .mySlides2 img {
-  width: 60vw;
+  height: inherit;
+  object-fit: cover;
+  justify-self: center;
+  margin: auto;
 }
 
 .mySlides3 img {
-  width: 60vw;
+  height: inherit;
+  object-fit: cover;
+  justify-self: center;
+  margin: auto;
 }
 
 .Visible {
-  display: block;
+  display: flex;
 }
 
 .inVisible {

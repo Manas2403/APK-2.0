@@ -45,7 +45,7 @@ const slider = function () {
       slides[slideIndex].classList.add("Visible");
       slides[slideIndex].classList.remove("inVisible");
 
-      setTimeout(showSlides, 4000); // Change image every 2 seconds
+      setTimeout(showSlides, 6000); // Change image every 2 seconds
     } else {
       setTimeout(showSlides, 2000);
     }
@@ -94,7 +94,7 @@ const slider = function () {
       slides2[slideIndex2].classList.add("Visible");
       slides2[slideIndex2].classList.remove("inVisible");
 
-      setTimeout(showSlides2, 4000); // Change image every 2 seconds
+      setTimeout(showSlides2, 6000); // Change image every 2 seconds
     } else {
       setTimeout(showSlides2, 2000);
     }
@@ -146,7 +146,7 @@ const slider = function () {
       slides3[slideIndex3].classList.add("Visible");
       slides3[slideIndex3].classList.remove("inVisible");
       // console.log(slides[slideIndex - 1]);
-      setTimeout(showSlides3, 4000); // Change image every 2 seconds
+      setTimeout(showSlides3, 6000); // Change image every 2 seconds
     } else {
       setTimeout(showSlides3, 2000);
     }

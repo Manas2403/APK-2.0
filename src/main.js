@@ -45,6 +45,27 @@ barba.init({
         techMain("codingevent");
       },
     },
+    {
+      namespace: "development-events",
+      beforeEnter() {},
+      afterEnter() {
+        techMain("developmentevent");
+      },
+    },
+    {
+      namespace: "ece-events",
+      beforeEnter() {},
+      afterEnter() {
+        techMain("eceevent");
+      },
+    },
+    {
+      namespace: "quizzing-events",
+      beforeEnter() {},
+      afterEnter() {
+        techMain("quizzingevent");
+      },
+    },
   ],
   transitions: [
     {

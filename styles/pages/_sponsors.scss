@@ -1,0 +1,70 @@
+.theading {
+  margin-top: 10px;
+}
+.row p {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 600px) {
+  .row p {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .row p {
+    font-size: 2.5rem;
+  }
+}
+.header__logo {
+  height: 5rem !important;
+}
+.dabba {
+  max-width: 400px;
+  margin: auto auto;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-fluid {
+  max-width: 100%;
+  margin-bottom: 40px;
+  max-height: 100%;
+}
+.sp-div {
+  margin-bottom: 40px;
+}
+// .Lines > div {
+//     position: absolute;
+//     top: 0;
+//     width: 1px;
+//     background: #000;
+//     /* height: 100vh; */
+//     opacity: 0.1;
+//     z-index: 3;
+// }
+.row {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.sponsor__button {
+  width: max-content;
+  background-color: rgb(196, 196, 196);
+  border-radius: 25px;
+  margin-top: 1.5em;
+  padding: 10px 20px;
+  border: 1px solid black;
+  transition: all 0.2s;
+}
+.sponsor__button:hover {
+  background-color: gray;
+}
+.sponsor__button:hover .sponsor__link {
+  color: rgb(6, 241, 123);
+}
+
+.sponsor__link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+}
