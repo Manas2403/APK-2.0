@@ -8,6 +8,8 @@ import "./timer";
 import { slider } from "./events.js";
 import { techMain } from "./tech-events/main";
 import { removeFooter, addFooter } from "./footer.js";
+import { animate } from "./animations";
+
 function main() {
   // Get a reference to the container element
   const container = document.querySelector("#scene-container");
@@ -29,6 +31,7 @@ barba.init({
       namespace: "home",
       beforeEnter() {},
       afterEnter() {
+        animate();
         addFooter();
       },
     },

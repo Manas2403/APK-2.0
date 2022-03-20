@@ -1,30 +1,13 @@
-// //ABOUT-US
-// const msg = document.querySelector(".msg");
-// gsap.registerPlugin(ScrollTrigger);
-// const animate = function () {
-//   const tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".aboutus",
-//       pin: true,
-//       scrub: 1,
-//       markers: true,
-//     },
-//   });
+function animate(){
+    gsap.from('.left_to_right',
+    {
+        duration:2,
+        x:'-100vw',
+        ease:'power2.in',
+        repeat:-1,
+        stagger:.4,
+        repeatDelay:2
+    })
+}
 
-//   tl.from(msg, {
-//     y: 100,
-//     autoAlpha: 0,
-//     stagger: 0.2,
-//     duration: 0.1,
-//   }).to(
-//     msg,
-//     {
-//       y: -50,
-//       autoAlpha: 0,
-//       stagger: 0.2,
-//       duration: 0.1,
-//     },
-//     0.2
-//   );
-// };
-// export { animate };
+export {animate};
