@@ -1,3 +1,7 @@
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 .theading {
   margin-top: 10px;
 }
@@ -44,7 +48,7 @@
 // }
 .row {
   margin-top: 100px;
-  padding: 20px;
+  // padding: 20px;
 }
 
 .sponsor__button {
@@ -67,4 +71,8 @@
   text-decoration: none;
   color: white;
   transition: all 0.2s;
+}
+
+.col {
+  flex: 1 0 0%;
 }

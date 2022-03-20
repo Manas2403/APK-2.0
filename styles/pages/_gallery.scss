@@ -57,6 +57,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #061125;
 }
 
 .gal-img {
@@ -326,13 +327,11 @@
     margin-top: 5%;
   }
   .mob-h {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 400;
     letter-spacing: 1px;
     text-align: left;
     width: auto;
-    margin-left: 15%;
-    padding-top: 5%;
   }
   .mob-p {
     text-align: center;
@@ -350,14 +349,14 @@
   }
   .gallery-mobile div {
     position: relative;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
   .gal-mob-img {
     width: 70%;
-    margin-top: 5%;
+    margin-top: 25%;
   }
   .mob-h {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1px;
     text-align: left;
@@ -373,19 +372,19 @@
 
 @media screen and (max-width: 600px) {
   .mob-h {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .mob-p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
 @media screen and (max-width: 400px) {
   .mob-h {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .mob-p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 }

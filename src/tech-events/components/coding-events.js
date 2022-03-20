@@ -139,16 +139,16 @@ const codingEventsData = function () {
     galleryMobile.innerHTML += `
       <center>
         <div >      
-          <h2 class="mob-h">${galleryContent.headingLeft[i]}</h2>
+          <h2 class="mob-h"></h2>
           <img src= '${galleryContent.imagePathLeft[i]}' class="gal-mob-img"/>
-          <p class="mob-p">${galleryContent.eventDetailsLeft[i].description}</p>
-
+          <p class="mob-p">${galleryContent.eventDetailsLeft[i].description}</p><br><br>
+          <p class="mob-p"><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span></span>${galleryContent.eventDetailsLeft[i].price} <br><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsLeft[i].contact[0]}<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsLeft[i].contact[1]}</p>
         </div>
         <div>
-          <h2 class="mob-h">${galleryContent.headingRight[i]}</h2>
+          <h2 class="mob-h"></h2>
           <img src= '${galleryContent.imagePathRight[i]}' class="gal-mob-img"/>
-          <p class="mob-p">${galleryContent.eventDetailsRight[i].description}</p>
-
+          <p class="mob-p">${galleryContent.eventDetailsRight[i].description}</p><br><br>
+          <p class="mob-p"><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span></span>${galleryContent.eventDetailsRight[i].price} <br><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsRight[i].contact[0]}<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsRight[i].contact[1]}</p>
         </div>
       </center>
     `;

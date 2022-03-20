@@ -7,7 +7,7 @@ import "./app";
 import "./timer";
 import { slider } from "./events.js";
 import { techMain } from "./tech-events/main";
-import { animate } from "./animations";
+import { removeFooter, addFooter } from "./footer.js";
 function main() {
   // Get a reference to the container element
   const container = document.querySelector("#scene-container");
@@ -26,6 +26,13 @@ barba.use(barbaCSS);
 barba.init({
   views: [
     {
+      namespace: "home",
+      beforeEnter() {},
+      afterEnter() {
+        addFooter();
+      },
+    },
+    {
       namespace: "events",
       beforeEnter() {
         // update the menu based on user navigation
@@ -33,6 +40,28 @@ barba.init({
       afterEnter() {
         // refresh the parallax based on new page content
         slider();
+        addFooter();
+      },
+    },
+    {
+      namespace: "techevent",
+      beforeEnter() {},
+      afterEnter() {
+        addFooter();
+      },
+    },
+    {
+      namespace: "sponsors",
+      beforeEnter() {},
+      afterEnter() {
+        addFooter();
+      },
+    },
+    {
+      namespace: "contact",
+      beforeEnter() {},
+      afterEnter() {
+        addFooter();
       },
     },
     {
@@ -43,6 +72,7 @@ barba.init({
       afterEnter() {
         // refresh the parallax based on new page content
         techMain("codingevent");
+        removeFooter();
       },
     },
     {
@@ -50,6 +80,7 @@ barba.init({
       beforeEnter() {},
       afterEnter() {
         techMain("developmentevent");
+        removeFooter();
       },
     },
     {
@@ -57,6 +88,7 @@ barba.init({
       beforeEnter() {},
       afterEnter() {
         techMain("eceevent");
+        removeFooter();
       },
     },
     {
@@ -64,6 +96,7 @@ barba.init({
       beforeEnter() {},
       afterEnter() {
         techMain("quizzingevent");
+        removeFooter();
       },
     },
   ],

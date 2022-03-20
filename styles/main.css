@@ -365,7 +365,6 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 30vh;
-  padding: 3rem;
 }
 
 .footer__text {
@@ -412,6 +411,36 @@ section {
 .footer__links__site a, .footer__links__social a {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 420px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30vh;
+    gap: 0.8rem;
+  }
+  .footer__links__site,
+  .footer__links__social {
+    gap: 0.8rem;
+  }
+  .footer__text {
+    margin-right: 0 !important;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 .hero {
@@ -653,6 +682,7 @@ section {
   line-height: 1.3;
   word-spacing: 5px;
   text-align: center;
+  text-shadow: 0 0 4px yellow, 0 0 11px yellow, 0 0 19px yellow, 0 0 40px yellow, 0 0 80px yellow, 0 0 100px yellow;
 }
 
 @media only screen and (max-width: 600px) {
@@ -709,9 +739,6 @@ section {
 @media only screen and (max-width: 650px) {
   .footer__text__email {
     font-size: 1rem !important;
-  }
-  .footer__text {
-    margin-right: 5vh !important;
   }
 }
 
@@ -1343,6 +1370,7 @@ section {
   font-size: 18px;
   width: 90%;
   font-family: "Airborne", sans-serif;
+  line-height: 1.5;
 }
 
 /* Slideshow container */
@@ -1536,7 +1564,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 4rem;
+  padding-bottom: 4rem;
   padding-top: 2rem;
 }
 
@@ -1680,6 +1708,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #061125;
 }
 
 .gal-img {
@@ -2089,13 +2118,11 @@ section {
     margin-top: 5%;
   }
   .mob-h {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 400;
     letter-spacing: 1px;
     text-align: left;
     width: auto;
-    margin-left: 15%;
-    padding-top: 5%;
   }
   .mob-p {
     text-align: center;
@@ -2113,14 +2140,13 @@ section {
   }
   .gallery-mobile div {
     position: relative;
-    margin-bottom: 60px;
   }
   .gal-mob-img {
     width: 70%;
-    margin-top: 5%;
+    margin-top: 25%;
   }
   .mob-h {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1px;
     text-align: left;
@@ -2136,20 +2162,20 @@ section {
 
 @media screen and (max-width: 600px) {
   .mob-h {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .mob-p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 400px) {
   .mob-h {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .mob-p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 }
@@ -2174,6 +2200,11 @@ section {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2000;
+}
+
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .theading {
@@ -2227,7 +2258,6 @@ section {
 
 .row {
   margin-top: 100px;
-  padding: 20px;
 }
 
 .sponsor__button {
@@ -2256,5 +2286,11 @@ section {
   color: white;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
 }
 /*# sourceMappingURL=main.css.map */

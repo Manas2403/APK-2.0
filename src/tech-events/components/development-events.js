@@ -54,57 +54,65 @@ const developmentEventsData = function () {
 
   for (let i = galleryContent.headingLeft.length - 1; i >= 0; --i) {
     slideLeft.innerHTML += `
-
-  <div class ="gal-card" ${
-    i % 2 === 0
-      ? 'style="background-color: #061125"'
-      : 'style="background-color: #444444 "'
-  }>
-  <h2 class ="gal-heading lh lh${i + 1}"> ${galleryContent.headingLeft[i]}</h2>
-  <p class="gal-p lp ">${galleryContent.eventDetailsLeft[i].price} <br> ${
+    <div class ="gal-card" ${
+      i % 2 === 0
+        ? 'style="background-color: #061125"'
+        : 'style="background-color: #444444 "'
+    }>
+    <h2 class ="gal-heading lh lh${i + 1}"></h2>
+    <p class="gal-desc">${galleryContent.eventDetailsLeft[i].description}</p>
+    <p class="gal-p lp "><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span>${
+      galleryContent.eventDetailsLeft[i].price
+    }</p>
+    <p class="gal-contact"><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${
       galleryContent.eventDetailsLeft[i].contact[0]
-    } <br> ${galleryContent.eventDetailsLeft[i].contact[1]}</p>
-  <p class="gal-desc">${galleryContent.eventDetailsLeft[i].description}</p>
-  <img class ="gal-img" src="${galleryContent.imagePathLeft[i]}"  />
-</div>
+    }<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${
+      galleryContent.eventDetailsLeft[i].contact[1]
+    }</p>
+    <img class ="gal-img" src="${galleryContent.imagePathLeft[i]}"  />
+  </div>
 `;
   }
 
   for (let i = 0; i < galleryContent.headingRight.length; ++i) {
     slideRight.innerHTML += `
-
-  <div class="gal-card"  ${
-    i % 2 === 0
-      ? 'style="animation: col-change 1.5s linear; animation-fill-mode: forwards; background-color: #061125"'
-      : '"style="background-color: #061125"'
-  }>
-  <h2 class="gal-heading rh rh${i + 1}"> ${galleryContent.headingRight[i]}</h2>
-  <p class="gal-p rp ">${galleryContent.eventDetailsRight[i].price} <br> ${
+    <div class="gal-card"  ${
+      i % 2 === 0
+        ? 'style="animation: col-change 1.5s linear; animation-fill-mode: forwards; background-color: #061125"'
+        : '"style="background-color: #061125"'
+    }>
+    <h2 class="gal-heading rh rh${i + 1}"></h2>
+    <p class="gal-desc">${galleryContent.eventDetailsRight[i].description}</p>
+    <p class="gal-p rp "><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span>${
+      galleryContent.eventDetailsRight[i].price
+    }</p>
+    <p class="gal-contact"><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${
       galleryContent.eventDetailsRight[i].contact[0]
-    } <br> ${galleryContent.eventDetailsRight[i].contact[1]} </p>
-  <p class="gal-desc">${galleryContent.eventDetailsRight[i].description}</p>
-  <img class="gal-img gal-img-right" src="${
-    galleryContent.imagePathRight[i]
-  }"  />
-</div>
+    }<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${
+      galleryContent.eventDetailsRight[i].contact[1]
+    }</p>
+    <img class="gal-img gal-img-right" src="${
+      galleryContent.imagePathRight[i]
+    }"  />
+  </div>
 `;
   }
 
   for (let i = 0; i < galleryContent.headingLeft.length; ++i) {
     galleryMobile.innerHTML += `
       <center>
-        <div >      
-          <h2 class="mob-h">${galleryContent.headingLeft[i]}</h2>
-          <img src= '${galleryContent.imagePathLeft[i]}' class="gal-mob-img"/>
-          <p class="mob-p">${galleryContent.eventDetailsLeft[i].description}</p>
-
-        </div>
-        <div>
-          <h2 class="mob-h">${galleryContent.headingRight[i]}</h2>
-          <img src= '${galleryContent.imagePathRight[i]}' class="gal-mob-img"/>
-          <p class="mob-p">${galleryContent.eventDetailsRight[i].description}</p>
-
-        </div>
+      <div >      
+      <h2 class="mob-h"></h2>
+      <img src= '${galleryContent.imagePathLeft[i]}' class="gal-mob-img"/>
+      <p class="mob-p">${galleryContent.eventDetailsLeft[i].description}</p><br><br>
+      <p class="mob-p"><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span></span>${galleryContent.eventDetailsLeft[i].price} <br><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsLeft[i].contact[0]}<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsLeft[i].contact[1]}</p>
+    </div>
+    <div>
+      <h2 class="mob-h"></h2>
+      <img src= '${galleryContent.imagePathRight[i]}' class="gal-mob-img"/>
+      <p class="mob-p">${galleryContent.eventDetailsRight[i].description}</p><br><br>
+      <p class="mob-p"><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span></span>${galleryContent.eventDetailsRight[i].price} <br><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsRight[i].contact[0]}<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${galleryContent.eventDetailsRight[i].contact[1]}</p>
+    </div>
       </center>
     `;
   }

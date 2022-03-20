@@ -94,7 +94,7 @@ const createSlider = function () {
       ${
         i === activeSlideIndex
           ? `
-        background-color: #c48f56;
+        background-color: #e412e5;
   
         `
           : `
@@ -141,7 +141,7 @@ const createSlider = function () {
       const circles = document.querySelectorAll(".circle");
       for (let i = 0; i < slideLength; ++i) {
         circles[i].style.backgroundColor =
-          i === activeSlideIndex ? "#c48f56" : "grey";
+          i === activeSlideIndex ? "#e412e5" : "grey";
         console.log("circle color change");
       }
       slideIn();
