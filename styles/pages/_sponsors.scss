@@ -31,8 +31,8 @@
 }
 .img-fluid {
   max-width: 100%;
-  margin-bottom: 40px;
-  max-height: 100%;
+  width: 15rem;
+  height: 10rem;
 }
 .sp-div {
   margin-bottom: 40px;
@@ -75,4 +75,25 @@
 
 .col {
   flex: 1 0 0%;
+}
+
+.walmart-image {
+  width: 100%;
+}
+
+.mainParent .information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.paisa {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8rem;
 }

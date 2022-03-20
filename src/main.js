@@ -18,7 +18,7 @@ function main() {
   const world = new World(container);
 
   // start the animation loop
-  world.start();
+  // world.start();
 }
 
 main();
