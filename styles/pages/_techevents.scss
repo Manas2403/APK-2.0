@@ -8,3 +8,161 @@
   align-items: center;
   z-index: 2000;
 }
+
+.techevents-container{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tech-events-heading{
+  font-size: 4rem;
+  font-family: $primary-font;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.tech-event-cards-holder{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.techevent-card{
+  transition: all 300ms ease-in;
+  height: 20rem;
+  width: 30rem;
+  max-width: 80vw;
+  background: orange;
+  margin: 1rem 1rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &:hover, :active{
+    .te-content-box{
+      transform: translateY(0%);
+      background: rgba(black, 0.5);
+      hr{
+        width: 20%;
+        transition-delay: 400ms;
+      }
+      li{
+        opacity: 1;
+        transform: translateX(0%);
+      }
+      ul :nth-child(1){
+        transition-delay: 500ms; 
+      }
+      ul :nth-child(2){
+        transition-delay: 550ms;
+      }
+      ul :nth-child(3){
+        transition-delay: 600ms;
+      }
+      ul :nth-child(4){
+        transition-delay: 650ms;
+      }
+      ul :nth-child(5){
+        transition-delay: 700ms;
+      }
+      ul :nth-child(6){
+        transition-delay: 750ms;
+      }
+      ul :nth-child(7){
+        transition-delay: 800ms;
+      }
+      
+      // a{
+      //   opacity: 1;
+      //   transform: translateX(0%);
+      //   transition-delay: 900ms;
+      // }
+    }
+  }
+}
+// #coding-events-card{
+//   background-image: url(/assets/img/tech-events/ipl.png);
+// }
+// #ece-events-card{
+//   background-image: url(/assets/img/tech-events/ipl.png);
+// }
+// #design-events-card{
+//   background-image: url(/assets/img/tech-events/ipl.png);
+// }
+// #cybersec-events-card{
+//   background-image: url(/assets/img/tech-events/ipl.png);
+// }
+
+// .coding-events-ul :nth-child(1){
+//   a:hover  #coding-events-card{
+//     background-image: url(/assets/img/tech-events/fragfest.jpg);
+//   }
+// }
+
+.te-card-inner{
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;
+  overflow: hidden;
+}
+.te-content-box{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(#385ccf, 0.6);
+  color: white;
+  transform: translateY(80%);
+  transition: all 600ms ease;
+  h1{
+   padding: 1rem 0em 0em 0em;
+   margin: 0;
+   font-family:$secondary-font;
+   font-size: 1.5rem;
+  }
+  hr{
+    background: #4A89CD;
+    height: 3px;
+    border: none;
+    margin: 0.5rem 0em 0.5rem 0em;
+    width: 0;
+    transition: all 400ms ease;
+  }
+  li{
+    font-family: $secondary-font;
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    transform: translateX(20%);
+    position: relative;
+    transition: all 600ms ease;
+    opacity: 0;
+  }
+  li a{
+    text-decoration: none;
+    color: cyan;
+  }
+  // a{
+  //   display: inline-block;
+  //   background: #4A89CD;
+  //   font-family: helvetica;
+  //   padding: 0.5em 1em;
+  //   color: white;
+  //   text-decoration: none;
+  //   font-weight: bolder;
+  //   position: relative;
+  //   transition: all 600ms ease;
+  //   opacity: 0;
+  //   transform: translateX(20%);
+  //   &:hover{
+  //     background: #1B324B;
+  //   }
+  // }
+}
+.te-content-inner{
+  padding: 0em 1em;
+}

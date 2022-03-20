@@ -2202,6 +2202,169 @@ section {
   z-index: 2000;
 }
 
+.techevents-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tech-events-heading {
+  font-size: 4rem;
+  font-family: "VALORANT", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.tech-event-cards-holder {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.techevent-card {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  height: 20rem;
+  width: 30rem;
+  max-width: 80vw;
+  background: orange;
+  margin: 1rem 1rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.techevent-card:hover .te-content-box, .techevent-card :active .te-content-box {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.techevent-card:hover .te-content-box hr, .techevent-card :active .te-content-box hr {
+  width: 20%;
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+
+.techevent-card:hover .te-content-box li, .techevent-card :active .te-content-box li {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.techevent-card:hover .te-content-box ul :nth-child(1), .techevent-card :active .te-content-box ul :nth-child(1) {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.techevent-card:hover .te-content-box ul :nth-child(2), .techevent-card :active .te-content-box ul :nth-child(2) {
+  -webkit-transition-delay: 550ms;
+          transition-delay: 550ms;
+}
+
+.techevent-card:hover .te-content-box ul :nth-child(3), .techevent-card :active .te-content-box ul :nth-child(3) {
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms;
+}
+
+.techevent-card:hover .te-content-box ul :nth-child(4), .techevent-card :active .te-content-box ul :nth-child(4) {
+  -webkit-transition-delay: 650ms;
+          transition-delay: 650ms;
+}
+
+.techevent-card:hover .te-content-box ul :nth-child(5), .techevent-card :active .te-content-box ul :nth-child(5) {
+  -webkit-transition-delay: 700ms;
+          transition-delay: 700ms;
+}
+
+.techevent-card:hover .te-content-box ul :nth-child(6), .techevent-card :active .te-content-box ul :nth-child(6) {
+  -webkit-transition-delay: 750ms;
+          transition-delay: 750ms;
+}
+
+.techevent-card:hover .te-content-box ul :nth-child(7), .techevent-card :active .te-content-box ul :nth-child(7) {
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+
+.te-card-inner {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  top: 10%;
+  left: 5%;
+  overflow: hidden;
+}
+
+.te-content-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(56, 92, 207, 0.6);
+  color: white;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.te-content-box h1 {
+  padding: 1rem 0em 0em 0em;
+  margin: 0;
+  font-family: "Airborne", sans-serif;
+  font-size: 1.5rem;
+}
+
+.te-content-box hr {
+  background: #4A89CD;
+  height: 3px;
+  border: none;
+  margin: 0.5rem 0em 0.5rem 0em;
+  width: 0;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.te-content-box li {
+  font-family: "Airborne", sans-serif;
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  position: relative;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+  opacity: 0;
+}
+
+.te-content-box li a {
+  text-decoration: none;
+  color: cyan;
+}
+
+.te-content-inner {
+  padding: 0em 1em;
+}
+
 .row {
   margin: 0 !important;
   padding: 0 !important;
