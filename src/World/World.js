@@ -2,14 +2,15 @@ import { createCamera } from "./components/camera.js";
 import { createSphere } from "./components/sphere.js";
 import { createScene } from "./components/scene.js";
 import { createPlane } from "./components/plane.js";
+import { createLight } from "./components/lights.js";
 
 import { createRenderer } from "./systems/renderer.js";
 import { Resizer } from "./systems/Resizer.js";
 import { Loop } from "./systems/Loop.js";
-import { createControls } from "./systems/controls.js";
+// import { createControls } from "./systems/controls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
-import apkLogo from "./assets/apk-logo.glb";
+import apkLogo from "./assets/logo.glb";
 
 let camera;
 let renderer;
@@ -24,55 +25,53 @@ class World {
     scene = createScene();
 
     loop = new Loop(camera, scene, renderer);
-    const controls = createControls(camera, renderer.domElement);
+    // const controls = createControls(camera, renderer.domElement);
     container.append(renderer.domElement);
 
     const sphere = createSphere();
+    const light = createLight();
     const plane = createPlane();
 
     loop.updatables.push(sphere);
+    loop.updatables.push(light);
     loop.updatables.push(plane);
 
     scene.add(sphere);
+    scene.add(light);
     scene.add(plane);
     const gltfLoader = new GLTFLoader();
 
     gltfLoader.load(
       apkLogo,
       (gltf) => {
-        model = gltf.scene.children[0];
-        model.position.set(15, 0, -25);
+        model = gltf.scene;
+        model.traverse(function (node) {
+          if (node.isMesh) {
+            node.castShadow = true;
+          }
+        });
+        model.position.set(8, 0, -5);
 
         if (window.innerWidth < 900) {
-          model.position.set(0, 0, -25);
+          model.position.set(0, 0, -5);
         }
         if (window.innerWidth < 600) {
-          model.position.set(0, 0, -40);
+          model.position.set(0, 0, -10);
         }
         loop.updatables.push(model);
 
-        var lastScrollTop = 0;
+        let lastScroll = 0;
+        let scrollHeight =
+          document.querySelector(".footer").getBoundingClientRect().bottom -
+          innerHeight;
+
         model.tick = (delta) => {
-          window.addEventListener("wheel", (e) => {
-            if (
-              document.querySelector(".footer").getBoundingClientRect().top >
-                innerHeight &&
-              document.querySelector(".footer").getBoundingClientRect().top <
-                document.querySelector(".footer").offsetTop
-            ) {
-              window.addEventListener("scroll", function () {
-                var st =
-                  window.pageYOffset || document.documentElement.scrollTop;
-                if (st > lastScrollTop) {
-                  let rotation = Math.PI * (e.offsetY / innerHeight);
-                  model.rotateZ(rotation * 0.00001);
-                } else {
-                  let rotation = Math.PI * (e.offsetY / innerHeight);
-                  model.rotateZ(-(rotation * 0.00001));
-                }
-                lastScrollTop = st <= 0 ? 0 : st;
-              });
-            }
+          window.addEventListener("scroll", () => {
+            lastScroll =
+              document.querySelector(".footer").getBoundingClientRect().bottom -
+              innerHeight;
+            let scroll = scrollHeight - lastScroll;
+            model.rotation.y = (scroll / scrollHeight) * Math.PI;
           });
         };
 

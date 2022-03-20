@@ -7,7 +7,7 @@ import "./app";
 import "./timer";
 import { slider } from "./events.js";
 import { techMain } from "./tech-events/main";
-
+import { animate } from "./animations";
 function main() {
   // Get a reference to the container element
   const container = document.querySelector("#scene-container");
@@ -16,7 +16,7 @@ function main() {
   const world = new World(container);
 
   // start the animation loop
-  //world.start();
+  world.start();
 }
 
 main();

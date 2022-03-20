@@ -1,26 +1,105 @@
+// .contact {
+//   width: 100vw;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   &__text {
+//     height: 60%;
+//     width: 40%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     padding: 4rem;
+
+//     &__info {
+//       font-size: 1.1rem;
+//       p {
+//         margin: 1rem 0;
+//       }
+//     }
+//   }
+//   &__map {
+//     width: 50%;
+//   }
+// }
 .contact {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
   &__text {
-    height: 60%;
-    width: 40%;
+    width: 90%;
+    height: 30%;
+    // height: 50%;
+    // width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 4rem;
+    padding-top: 2rem;
 
     &__info {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       p {
         margin: 1rem 0;
+        font-family: $secondary-font;
+      }
+    }
+    .contact__text__cordi {
+      font-family: $secondary-font;
+    }
+    @media only screen and(min-width: 600px) {
+      &__info {
+        font-size: 2rem;
       }
     }
   }
+
   &__map {
-    width: 50%;
+    // width: 40%;
+    width: 80%;
+    overflow: hidden;
+    padding-bottom: 16.25%;
+    padding-right: 5%;
+    position: relative;
+    height: 25%;
+  }
+  &__map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  @media only screen and (min-width: 900px) {
+    &__text {
+      // padding-top: 1rem;
+      // width: 90%;
+      // height: 30%;
+      height: 50%;
+      width: 40%;
+    }
+    &__map {
+      // width: 80%;
+      width: 40%;
+    }
+  }
+  // @media only screen and (min-width: 600px) and (max-width: 900px) {
+  //   &__map {
+  //     padding-right: 10%;
+  //   }
+  // }
+}
+// @media screen and (min-width: 600px) {
+// }
+// @media screen and (min-width: 900px) {
+// }
+@media only screen and (min-width: 900px) {
+  .contact {
+    flex-direction: row;
   }
 }

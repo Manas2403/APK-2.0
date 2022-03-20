@@ -61,11 +61,11 @@
 
 .gal-img {
   position: absolute;
-  width: 80%;
-  height: 40%;
+  width: 90%;
+  height: 50%;
   object-fit: cover;
-  left: 10%;
-  top: 23%;
+  left: 5%;
+  top: 12%;
   z-index: 5;
   filter: drop-shadow(5px 5px 20px #222246);
   transform: translateZ(80%);
@@ -82,7 +82,7 @@
   font-size: 2rem;
   justify-content: center;
   z-index: 10;
-  font-family: "Montserrat", sans-serif;
+  font-family: $primary-font;
 }
 
 .gal-p {
@@ -93,19 +93,31 @@
   font-size: 1rem;
   font-weight: 500;
   z-index: 5;
-  font-family: "Montserrat", sans-serif;
+  font-family: $secondary-font;
 }
 
 .gal-desc {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
-  bottom: 5%;
-  left: 5%;
+  bottom: 15%;
+  left: 2.5%;
   font-size: 1rem;
   font-weight: 500;
   z-index: 12;
+  font-family: $secondary-font;
+  line-height: 2;
 }
-
+.gal-contact {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.6);
+  top: 88%;
+  left: 70%;
+  font-size: 1rem;
+  font-weight: 500;
+  z-index: 12;
+  font-family: $secondary-font;
+  line-height: 1.5;
+}
 .gal-card {
   position: relative;
   display: flex;
@@ -113,7 +125,7 @@
 }
 .gal-img-right {
   position: absolute;
-  top: 22%;
+  top: 12%;
   filter: drop-shadow(5px 5px 20px #061125);
 }
 
@@ -163,12 +175,12 @@
 }
 
 .lp {
-  top: 68%;
-  left: 59.5%;
+  top: 88%;
+  left: 5%;
 }
 .rp {
-  left: 18%;
-  top: 12.2%;
+  left: 5%;
+  top: 88%;
 }
 
 .in_view_left {
@@ -293,7 +305,7 @@
   display: none;
   height: 100%;
   width: 90%;
-  margin-top: 100px;
+  // margin-top: 100px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -354,9 +366,8 @@
     padding-top: 5%;
   }
   .mob-p {
-    text-align: right;
-    margin-right: 15%;
-    font-size: 5rem;
+    text-align: center;
+    font-size: 1.7rem;
   }
 }
 
@@ -365,7 +376,8 @@
     font-size: 3rem;
   }
   .mob-p {
-    font-size: 3.5rem;
+    font-size: 1.7rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 400px) {
@@ -373,7 +385,8 @@
     font-size: 2.5rem;
   }
   .mob-p {
-    font-size: 3rem;
+    font-size: 1.7rem;
+    text-align: center;
   }
 }
 

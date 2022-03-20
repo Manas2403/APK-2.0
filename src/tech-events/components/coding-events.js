@@ -17,7 +17,7 @@ const codingEventsData = function () {
       {
         heading: "Humblefool Cup",
         description:
-          "Humblefool Cup is a 2-tier ACM-ICPC style national level coding contest conducted in the fond memory of Harsha Suryanarayana A.K.A Humblefool, one of the best coders of India, an alumnus of IIIT Allahabad and one of the very first Indian red coders on Topcoder. For everyone who ever admired Humblefool or has a knack for competitive coding, this is the perfect platform to apply your skills in teams of up to three and have a chance at the generous prizes. The contest will be held in two rounds: An Open Qualifying Round and a Proctored Final Round.",
+          "Aparoksha's flagship coding event that garners huge participation from around the world, the HumbleFool Cup is conducted to celebrate the legacy of Harsha Suryanarayana, aka humblefool, IIITA's pride and one of the best coders to ever come out of India",
         price: "600$",
         date: "17 March",
         contact: ["Kalyan Dubey", "+91 763 281 1634"],
@@ -25,7 +25,7 @@ const codingEventsData = function () {
       {
         heading: "Codered",
         description:
-          "Talk is Cheap. Show me the code- Linus Torvalds. CodeRed is the competitive coding event for all for the fanatics of perplexing problems. Students from all over the country can participate in teams of (at most) three to battle out their coding skills. It’s held in two rounds: An open Qualifying round and a Proctored Final Round.",
+          "Aparoksha's flagship TEAM competitive coding event, CodeRed presented by Codechef is a cut-throat competition where  teams of upto 3 coders show off their programming skills. With 9 Problems, 900+ teams and 40 Finalists, previous edition concluded with prizes and goodies worth ₹50,000",
         price: "INR 50K",
         date: "10th April",
         contact: ["Parmjeet Singh", "+91 805 469 5716"],
@@ -33,7 +33,7 @@ const codingEventsData = function () {
       {
         heading: "CodeQueen",
         description:
-          "CodeQueen is an all-girls coding contest held during Aparoksha for teams of 2 in two rounds: a preliminary round and a proctored finals. Collaborate, code and show them who the CodeQueens are!",
+          "Aparoksha’s all-girls coding event CodeQueen, where codesses compete in teams of 2 in two rounds, a preliminary round and a proctored finals.",
         price: "INR 30K",
         date: "10th April",
         contact: ["Aakash Mehta", "+91 883 778 0918"],
@@ -55,7 +55,7 @@ const codingEventsData = function () {
       {
         heading: "Alkhawarizm",
         description:
-          "Aparoksha’s flagship individual-coding contest, Alkhwarizm, focuses on the knowledge and application of algorithms. Alkhwarizm is held at an international level on CodeChef and has had its problems left unsolved even while hosting some of the world’s best coders.",
+          "Alkhwarizm is the annual National level programming competition of Aparoksha which focuses on the knowledge of Algorithms. The previous edition garnered a participation of 779 coders, out of which 51 were International participants. ",
         price: "INR 30K",
         date: "6th April",
         contact: ["Bhavya Girotra", "+91 971 814 0144"],
@@ -63,7 +63,7 @@ const codingEventsData = function () {
       {
         heading: "C-Fresh",
         description:
-          "A green tick is what makes a coder smile the brightest! A programming contest held each year to create enthusiasm and promote the competitive coding skills among the students of first year. The prizes are big and so is the stage! For all the freshers out there, here’s your time to step up and prove your coding skills.",
+          "C Fresh is held annually, exclusively for freshers, to promote competitive coding among them and motivate them in their journey. ",
         price: "INR 40K",
         date: "11th April",
         contact: ["Sumit Kumar Sahu", "+91 911 012 2904"],
@@ -71,7 +71,7 @@ const codingEventsData = function () {
       {
         heading: "Decode",
         description:
-          "A test of the coders’ relational-reasoning skills. Given the sets of input and outputs for an unknown program, participants are required to write a code that would mimic the same behaviour.",
+          "A coding contest without the problem statements, participants guess the program responsible for given inputs and outputs and write a code that would mimic that behavior. ",
         price: "INR 10K",
         date: "9th April",
         contact: ["Arpit Bhatt", "+91 638 818 4190"],
@@ -79,7 +79,7 @@ const codingEventsData = function () {
       {
         heading: "Humblefool Cup",
         description:
-          "Humblefool Cup is a 2-tier ACM-ICPC style national level coding contest conducted in the fond memory of Harsha Suryanarayana A.K.A Humblefool, one of the best coders of India, an alumnus of IIIT Allahabad and one of the very first Indian red coders on Topcoder. For everyone who ever admired Humblefool or has a knack for competitive coding, this is the perfect platform to apply your skills in teams of up to three and have a chance at the generous prizes. The contest will be held in two rounds: An Open Qualifying Round and a Proctored Final Round.",
+          "Aparoksha's flagship coding event that garners huge participation from around the world, the HumbleFool Cup is conducted to celebrate the legacy of Harsha Suryanarayana, aka humblefool, IIITA's pride and one of the best coders to ever come out of India        ",
         price: "600$",
         date: "17 March",
         contact: ["Kalyan Dubey", "+91 763 281 1634"],
@@ -95,11 +95,16 @@ const codingEventsData = function () {
       ? 'style="background-color: #061125"'
       : 'style="background-color: #444444 "'
   }>
-  <h2 class ="gal-heading lh lh${i + 1}"> ${galleryContent.headingLeft[i]}</h2>
-  <p class="gal-p lp ">${galleryContent.eventDetailsLeft[i].price} <br> ${
-      galleryContent.eventDetailsLeft[i].contact[0]
-    } <br> ${galleryContent.eventDetailsLeft[i].contact[1]}</p>
+  <h2 class ="gal-heading lh lh${i + 1}"></h2>
   <p class="gal-desc">${galleryContent.eventDetailsLeft[i].description}</p>
+  <p class="gal-p lp "><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span>${
+    galleryContent.eventDetailsLeft[i].price
+  }</p>
+  <p class="gal-contact"><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${
+    galleryContent.eventDetailsLeft[i].contact[0]
+  }<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${
+      galleryContent.eventDetailsLeft[i].contact[1]
+    }</p>
   <img class ="gal-img" src="${galleryContent.imagePathLeft[i]}"  />
 </div>
 `;
@@ -113,11 +118,16 @@ const codingEventsData = function () {
       ? 'style="animation: col-change 1.5s linear; animation-fill-mode: forwards; background-color: #061125"'
       : '"style="background-color: #061125"'
   }>
-  <h2 class="gal-heading rh rh${i + 1}"> ${galleryContent.headingRight[i]}</h2>
-  <p class="gal-p rp ">${galleryContent.eventDetailsRight[i].price} <br> ${
-      galleryContent.eventDetailsRight[i].contact[0]
-    } <br> ${galleryContent.eventDetailsRight[i].contact[1]} </p>
+  <h2 class="gal-heading rh rh${i + 1}"></h2>
   <p class="gal-desc">${galleryContent.eventDetailsRight[i].description}</p>
+  <p class="gal-p rp "><span class="fa-solid fa-trophy" style="margin-right:0.5rem"></span>${
+    galleryContent.eventDetailsRight[i].price
+  }</p>
+  <p class="gal-contact"><span class="fa-solid fa-user" style="margin-right:0.5rem"></span>${
+    galleryContent.eventDetailsRight[i].contact[0]
+  }<br><span class="fa-solid fa-phone" style="margin-right:0.5rem"></span>${
+      galleryContent.eventDetailsRight[i].contact[1]
+    }</p>
   <img class="gal-img gal-img-right" src="${
     galleryContent.imagePathRight[i]
   }"  />
