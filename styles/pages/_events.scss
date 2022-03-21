@@ -20,11 +20,12 @@
         font-size: 3rem;
         text-transform: uppercase;
         margin-bottom: 2rem;
+        font-family: $primary-font;
       }
       p {
         font-size: $body-text;
         width: 90%;
-        font-family: "Airborne", sans-serif;
+        font-family: $secondary-font;
         line-height: 1.5;
       }
     }
@@ -178,5 +179,12 @@
   }
   to {
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .mySlides img,
+  .mySlides2 img,
+  .mySlides3 img {
+    width: 100%;
   }
 }
