@@ -10,6 +10,8 @@ function animate() {
 }
 
 var x = 0;
+if(document.getElementById("numbersd")!=null)
+{
 document.getElementById("numbersd").style.opacity=0;
 
 setInterval(()=>{
@@ -20,7 +22,7 @@ setInterval(()=>{
     animate();
   }
 },1000);
-
+}
 
 
 export { animate };
