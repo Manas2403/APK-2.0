@@ -22,6 +22,8 @@ function main() {
 
 main();
 
+
+
 barba.use(barbaCSS);
 
 barba.init({
@@ -30,7 +32,7 @@ barba.init({
       namespace: "home",
       beforeEnter() {},
       afterEnter() {
-        animate();
+        // animate();
         addFooter();
       },
     },
