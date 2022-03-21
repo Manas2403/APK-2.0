@@ -91,7 +91,7 @@
   color: rgba(255, 255, 255, 0.6);
   bottom: 20%;
   left: 25%;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
   z-index: 5;
   font-family: $secondary-font;
@@ -334,7 +334,6 @@
     width: auto;
   }
   .mob-p {
-    text-align: center;
     /* margin-right: 18%; */
     font-size: 1.7rem;
   }
@@ -365,7 +364,6 @@
     padding-top: 5%;
   }
   .mob-p {
-    text-align: center;
     font-size: 1.7rem;
   }
 }
@@ -376,7 +374,6 @@
   }
   .mob-p {
     font-size: 1.5rem;
-    text-align: center;
   }
 }
 @media screen and (max-width: 400px) {

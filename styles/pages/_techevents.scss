@@ -9,7 +9,7 @@
   z-index: 2000;
 }
 
-.techevents-container{
+.techevents-container {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -17,14 +17,14 @@
   justify-content: center;
 }
 
-.tech-events-heading{
+.tech-events-heading {
   font-size: 4rem;
   font-family: $primary-font;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 7rem;
+  // margin-bottom: 3rem;
 }
 
-.tech-event-cards-holder{
+.tech-event-cards-holder {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
@@ -32,50 +32,52 @@
   justify-content: space-evenly;
 }
 
-.techevent-card{
-  transition: all 300ms ease-in;
+.techevent-card {
+  transition: all 300ms ease-in-out;
   height: 20rem;
   width: 30rem;
   max-width: 80vw;
-  background: orange;
+  background: #fcec0c;
   margin: 1rem 1rem;
-  background-position: center;
-  background-size: cover;
   position: relative;
-  &:hover, :active{
-    .te-content-box{
+  &:hover,
+  :active {
+    &:before {
+      opacity: 0.75;
+    }
+    .te-content-box {
       transform: translateY(0%);
       background: rgba(black, 0.5);
-      hr{
+      hr {
         width: 20%;
         transition-delay: 400ms;
       }
-      li{
+      li {
         opacity: 1;
         transform: translateX(0%);
       }
-      ul :nth-child(1){
-        transition-delay: 500ms; 
+      ul :nth-child(1) {
+        transition-delay: 500ms;
       }
-      ul :nth-child(2){
+      ul :nth-child(2) {
         transition-delay: 550ms;
       }
-      ul :nth-child(3){
+      ul :nth-child(3) {
         transition-delay: 600ms;
       }
-      ul :nth-child(4){
+      ul :nth-child(4) {
         transition-delay: 650ms;
       }
-      ul :nth-child(5){
+      ul :nth-child(5) {
         transition-delay: 700ms;
       }
-      ul :nth-child(6){
+      ul :nth-child(6) {
         transition-delay: 750ms;
       }
-      ul :nth-child(7){
+      ul :nth-child(7) {
         transition-delay: 800ms;
       }
-      
+
       // a{
       //   opacity: 1;
       //   transform: translateX(0%);
@@ -84,18 +86,32 @@
     }
   }
 }
-// #coding-events-card{
-//   background-image: url(/assets/img/tech-events/ipl.png);
-// }
-// #ece-events-card{
-//   background-image: url(/assets/img/tech-events/ipl.png);
-// }
-// #design-events-card{
-//   background-image: url(/assets/img/tech-events/ipl.png);
-// }
-// #cybersec-events-card{
-//   background-image: url(/assets/img/tech-events/ipl.png);
-// }
+.techevent-card:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  transition: all 500ms ease-in-out;
+}
+
+#coding-events-card:before {
+  background-image: url(/assets/img/tech-events/proard.png);
+}
+#ece-events-card:before {
+  background-image: url(/assets/img/tech-events/proard.png);
+}
+#design-events-card:before {
+  background-image: url(/assets/img/tech-events/proard.png);
+}
+#cybersec-events-card:before {
+  background-image: url(/assets/img/tech-events/proard.png);
+}
 
 // .coding-events-ul :nth-child(1){
 //   a:hover  #coding-events-card{
@@ -103,7 +119,7 @@
 //   }
 // }
 
-.te-card-inner{
+.te-card-inner {
   position: absolute;
   height: 80%;
   width: 90%;
@@ -111,7 +127,7 @@
   left: 5%;
   overflow: hidden;
 }
-.te-content-box{
+.te-content-box {
   position: relative;
   height: 100%;
   width: 100%;
@@ -119,21 +135,21 @@
   color: white;
   transform: translateY(80%);
   transition: all 600ms ease;
-  h1{
-   padding: 1rem 0em 0em 0em;
-   margin: 0;
-   font-family:$secondary-font;
-   font-size: 1.5rem;
+  h1 {
+    padding: 1rem 0em 0em 0em;
+    margin: 0;
+    font-family: $secondary-font;
+    font-size: 1.5rem;
   }
-  hr{
-    background: #4A89CD;
+  hr {
+    background: #4a89cd;
     height: 3px;
     border: none;
     margin: 0.5rem 0em 0.5rem 0em;
     width: 0;
     transition: all 400ms ease;
   }
-  li{
+  li {
     font-family: $secondary-font;
     padding: 0.2rem 1rem;
     font-size: 1.2rem;
@@ -142,7 +158,7 @@
     transition: all 600ms ease;
     opacity: 0;
   }
-  li a{
+  li a {
     text-decoration: none;
     color: cyan;
   }
@@ -163,6 +179,16 @@
   //   }
   // }
 }
-.te-content-inner{
+.te-content-inner {
   padding: 0em 1em;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
