@@ -12,9 +12,9 @@
 
   &__burger {
     width: 28px;
-    height: 3px;
+    height: 4px;
     border-radius: 50px;
-    background-color: $accent-color;
+    background-color: #490fbd;
     margin-top: 20%;
     position: relative;
     @include transition-ease;
@@ -22,11 +22,11 @@
     &::before {
       content: "";
       width: 28px;
-      height: 3px;
+      height: 4px;
       position: absolute;
       top: -8px;
       border-radius: 50px;
-      background-color: $accent-color;
+      background-color: #490fbd;
 
       @include transition-ease;
     }
@@ -34,11 +34,11 @@
     &::after {
       content: "";
       width: 28px;
-      height: 3px;
+      height: 4px;
       position: absolute;
       top: 8px;
       border-radius: 50px;
-      background-color: $accent-color;
+      background-color: #490fbd;
 
       @include transition-ease;
     }

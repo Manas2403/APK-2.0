@@ -59,6 +59,7 @@
   padding: 10px 20px;
   border: 1px solid rgb(196, 196, 196);
   transition: all 0.2s;
+  font-family: $secondary-font;
 }
 .sponsor__button:hover {
   background-color: gray;
@@ -87,6 +88,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 7rem;
+  font-family: $secondary-font;
 }
 
 .paisa {

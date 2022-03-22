@@ -107,6 +107,8 @@
   z-index: 12;
   font-family: $secondary-font;
   line-height: 2;
+  animation: fade_text 5s ease-out forwards;
+  animation-delay: 0.7s;
 }
 .gal-contact {
   position: absolute;
@@ -198,15 +200,15 @@
 }
 
 .in_view_left-p {
-  transform: translateX(-60vw);
+  transform: translateX(-25vw);
   animation: pop-left-p 1.3s ease-out;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
 .in_view_right-p {
-  transform: translateX(60vw);
+  transform: translateX(25vw);
   animation: pop-right-p 1.3s ease-out;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -232,7 +234,7 @@
 @keyframes pop-right {
   0% {
     transform: translateX(100%);
-    opacity: 1;
+    opacity: 0;
   }
 
   100% {
@@ -245,7 +247,6 @@
     transform: translateX(-60vw);
     opacity: 0;
   }
-
   100% {
     transform: translateX(0%);
     opacity: 1;
@@ -280,6 +281,17 @@
     opacity: 0;
   }
   20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade_text {
+  0% {
+    opacity: 0;
+  }
+  40% {
     opacity: 0;
   }
   100% {
