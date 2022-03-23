@@ -72,6 +72,7 @@
   text-decoration: none;
   color: white;
   transition: all 0.2s;
+  font-size: 24px;
 }
 
 .col {
@@ -98,4 +99,8 @@
   align-items: center;
   justify-content: space-around;
   gap: 8rem;
+}
+.information p {
+  text-align: center;
+  line-height: 1.3;
 }

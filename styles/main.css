@@ -2388,7 +2388,7 @@ section {
   transition: all 300ms ease-in-out;
   height: 25rem;
   width: 40rem;
-  max-width: 80vw;
+  max-width: 100vw;
   background: #fcec0c;
   margin: 1rem 1rem;
   position: relative;
@@ -2552,6 +2552,24 @@ section {
   padding: 0em 1em;
 }
 
+@media only screen and (max-width: 600px) {
+  .tech-events-heading {
+    margin-top: 11rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .techevent-card {
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .techevent-card {
+    height: 15rem;
+  }
+}
+
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -2652,6 +2670,7 @@ section {
   color: white;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  font-size: 24px;
 }
 
 .col {
@@ -2698,5 +2717,10 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 8rem;
+}
+
+.information p {
+  text-align: center;
+  line-height: 1.3;
 }
 /*# sourceMappingURL=main.css.map */
