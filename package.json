@@ -6,6 +6,7 @@
     "lil-gui": "^0.16.1",
     "npx": "^10.2.2",
     "parcel-bundler": "^1.12.5",
+    "scrollmagic": "^2.0.8",
     "three": "^0.136.0"
   },
   "devDependencies": {

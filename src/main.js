@@ -22,8 +22,6 @@ function main() {
 
 main();
 
-
-
 barba.use(barbaCSS);
 
 barba.init({
