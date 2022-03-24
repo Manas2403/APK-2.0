@@ -20,6 +20,7 @@
 }
 .header__logo {
   height: 5rem !important;
+  z-index: 4000;
 }
 .dabba {
   max-width: 400px;
@@ -88,7 +89,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 7rem;
+  //padding-top: 7rem;
   font-family: $secondary-font;
 }
 

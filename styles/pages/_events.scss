@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 10vh;
+  // padding-top: 10vh;
 
   .event {
     display: flex;
@@ -213,4 +213,7 @@
     width: 95vw;
     height: 30vh;
   }
+}
+.mainParent {
+  padding-top: 5rem;
 }

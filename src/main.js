@@ -30,7 +30,7 @@ barba.init({
       namespace: "home",
       beforeEnter() {},
       afterEnter() {
-        // animate();
+        animate();
         addFooter();
       },
     },

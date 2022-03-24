@@ -1445,7 +1445,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 10vh;
 }
 
 .events .event {
@@ -1678,6 +1677,10 @@ section {
     width: 95vw;
     height: 30vh;
   }
+}
+
+.mainParent {
+  padding-top: 5rem;
 }
 
 .contact {
@@ -2646,6 +2649,7 @@ section {
 
 .header__logo {
   height: 5rem !important;
+  z-index: 4000;
 }
 
 .dabba {
@@ -2731,7 +2735,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7rem;
   font-family: "Airborne", sans-serif;
 }
 
