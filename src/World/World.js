@@ -51,7 +51,7 @@ class World {
           }
         });
         model.position.set(8, 0, -5);
-
+        model.scale.set(1.2, 1.2, 1.2);
         if (window.innerWidth < 900) {
           model.position.set(0, 0, -5);
         }

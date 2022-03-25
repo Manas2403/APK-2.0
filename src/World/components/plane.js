@@ -13,7 +13,7 @@ function createPlane() {
     wireframe: true,
   });
   const plane = new Mesh(geometry, material);
-  plane.position.set(0, -20, -35);
+  plane.position.set(0, -25, -35);
   plane.rotateX(-Math.PI * 0.25);
 
   plane.tick = (delta) => {
