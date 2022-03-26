@@ -168,7 +168,10 @@ addEventListener("keydown", (e) => {
     }
   }
 });
-addEventListener("touchstart", () => {
+addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  e.stopPropagation();
   if (player.body.position.y >= innerHeight / 2) {
     player.setVelocityY(-playerObj.velocity.y);
     if (player.getPositionX() < innerWidth / 2)
@@ -176,6 +179,6 @@ addEventListener("touchstart", () => {
   }
 });
 
-// addEventListener("resize", () => {
-//   location.reload();
-// });
+addEventListener("resize", () => {
+  location.reload();
+});
