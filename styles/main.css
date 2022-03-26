@@ -2515,7 +2515,7 @@ section {
 }
 
 #coding-events-card:before {
-  background-image: url(/assets/img/tech-events/proard.png);
+  background-image: url(/assets/img/tech-events/humblefool.png);
 }
 
 #ece-events-card:before {
@@ -2523,11 +2523,11 @@ section {
 }
 
 #design-events-card:before {
-  background-image: url(/assets/img/tech-events/proard.png);
+  background-image: url(/assets/img/tech-events/webkriti.png);
 }
 
 #cybersec-events-card:before {
-  background-image: url(/assets/img/tech-events/proard.png);
+  background-image: url(/assets/img/tech-events/grayhound.png);
 }
 
 .te-card-inner {
