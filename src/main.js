@@ -3,7 +3,6 @@ import barbaCSS from "@barba/css";
 
 import { World } from "./World/World.js";
 import "./menu";
-import "./app";
 import "./timer";
 import { slider } from "./events.js";
 import { techMain } from "./tech-events/main";
