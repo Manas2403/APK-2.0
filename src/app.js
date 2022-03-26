@@ -176,6 +176,6 @@ addEventListener("touchstart", () => {
   }
 });
 
-addEventListener("resize", () => {
-  location.reload();
-});
+// addEventListener("resize", () => {
+//   location.reload();
+// });
