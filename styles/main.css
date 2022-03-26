@@ -160,7 +160,7 @@ body {
 }
 
 #scene-container {
-  height: 120vh;
+  height: 200vh;
   width: 100%;
   background-color: #000;
   z-index: -10;
